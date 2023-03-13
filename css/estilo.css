@@ -45,41 +45,44 @@ img {
   color: #fff !important;
 }
 
+.titulo-pag {
+  width: 100%;
+  display: table;
+  padding: 8px 0px;
+  text-align: center;
+  background-color: #FFC8AA;
+  color: #7c002d;
+}
+
 /* -------------------------------------------------------------------------------------------
   Cabecalho
 --------------------------------------------------------------------------------------------- */
 .header {
+  width: 100%;
+  max-height: 14vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px;
-  max-width: 1197px;
-  margin: 0 auto;
+  padding: 20px 0px;
+  background-color: #bc3767;
 }
 
 .header img {
   max-width: 150px;
+  margin-left: 20px;
 }
 
 .header .menu {
   display: flex;
-  gap: 60px;
+  gap: 30px;
   flex-wrap: wrap;
+  margin-right: 30px;
 }
 
 .header ul.menu li a {
   color: #fff;
   text-decoration: none;
   font-size: 1.2rem;
-}
-
-.header .menu .menu-entrar {
-  display: flex;
-  gap: 10px;
-}
-
-.header .menu .menu-entrar img {
-  max-width: 24px;
 }
 
 /* -------------------------------------------------------------------------------------------
@@ -231,7 +234,7 @@ footer {
   Hospedagem
 --------------------------------------------------------------------------------------------- */
 
-.hospedagem {
+/*.hospedagem {
   display: grid;
   grid-template-columns: auto;
   align-items: center;
@@ -245,7 +248,7 @@ footer {
   border-radius: 0px 70px 0px 0px / 25px 70px 25px 25px;
   margin-bottom: 40px;
   width: 1197px;
-}
+}*/
 
 /* -------------------------------------------------------------------------------------------
   Espacos
@@ -275,16 +278,6 @@ section.espaco div h3 {
 /* -------------------------------------------------------------------------------------------
   Clinicas
 --------------------------------------------------------------------------------------------- */
-
-.clinicas {
-  display: grid;
-  grid-template-columns: auto;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 20px 20px;
-  text-align: center;
-  margin-bottom: 20px;
-}
 
 .clinicas img {
   border-radius: 0px 70px 0px 0px / 25px 70px 25px 25px;
@@ -318,34 +311,14 @@ section.clinica div h3 {
   Sobre
 --------------------------------------------------------------------------------------------- */
 
-.sobre {
-  display: grid;
-  grid-template-columns: auto;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 20px 20px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.sobre img {
-  border-radius: 0px 70px 0px 0px / 25px 70px 25px 25px;
-  margin-bottom: 40px;
-  width: 1197px;
-}
-
-section.sobre-fluido {
-  background-color: #8f1d46;
-}
-
 section.caixa-sobre {
-  max-width: 1197px;
-  margin: 0 auto;
+  width: 100%;
   padding: 40px 20px;
   display: grid;
   grid-template-columns: auto auto;
   gap: 40px;
   align-items: center;
+  background-color: #8f1d46;
 }
 
 section.caixa-sobre div {
