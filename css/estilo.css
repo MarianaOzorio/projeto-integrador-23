@@ -59,7 +59,7 @@ img {
 --------------------------------------------------------------------------------------------- */
 .header {
   width: 100%;
-  min-height: 10vh;
+  min-height: 11vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
