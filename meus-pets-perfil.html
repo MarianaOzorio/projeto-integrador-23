@@ -1,0 +1,107 @@
+<!-- 
+  AUTORES:
+    ERIC KATSUMI OUCHI
+    FABRICIO LUIZ DE POLITO
+    JOSE ANTONIO LOPES PAIVA JUNIOR
+    MARIANA DE ATHAYDE COSTA OZORIO
+ -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus pets - Lar do Pet - (PROJETO INTEGRADOR SENAC)</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/painel.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script>
+    function sanfonaItem(item) {
+      let sanfonaItems = document.querySelectorAll('.sanfona-item');
+      for (var i = 0; i < sanfonaItems.length; i++) {
+        sanfonaItems[i].style.display = 'none';
+      }
+
+      let sanfonaClicado = document.querySelector('.sanfona-' + item);
+      sanfonaClicado.style.display = 'block';
+    }
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html"><img src="img/logo-transparente.png" alt="Logo"></a>
+    <nav>
+      <ul class="menu">
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="clinicas.html">Clínicas</a></li>
+        <li><a href="hospedagem.html">Hospedagem</a></li>
+        <li class="menu-entrar">
+          <a href="login.html">Entrar</a>
+          <img src="img/icone-entrar.png" alt="">
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="painel">
+    <div class="menu-lateral">
+      <ul>
+        <li class="bem-vindo cor-branco">Olá, Michael</li>
+        <li><a href="meus-pets.html"><img src="img/painel/menu/menu-1.png" alt=""> Meus pets</a></li>
+        <li><a href="meus-pets.html"><img src="img/painel/menu/menu-2.png" alt=""> Dados pessoais</a></li>
+        <li><a href="meus-pets.html"><img src="img/painel/menu/menu-3.png" alt=""> Contato</a></li>
+      </ul>
+    </div>
+    <div class="caixa-pets-perfil">
+      <div class="caixa-pet-introducao">
+        <h1 class="cor-branco">Mily</h1>
+        <div>
+          <p class="cor-branco">Idade: 8 anos</p>
+          <p class="cor-branco">Raça: não definido</p>
+          <p class="cor-branco">Peso: 10 Kg</p>
+        </div>
+      </div>
+      <!-- fim .caixa-pet-introducao -->
+
+      <div class="sanfona">
+        <a href="javascript:void(0)" class="sanfona-link" onclick="sanfonaItem(1)">Alimentação</a>
+        <div class="sanfona-item sanfona-1 sanfona-ativo">
+          <a href="meus-pets-perfil-edit.html" class="sanfona-link-edit">Editar</a>
+          <p>Tipo: Ração para cães diabéticos</p>
+          <p>Quantidade: 240g diários</p>
+          <p>Marca: Premiere</p>
+          <p>Observações: 2 refeições de 120g por dia. Manhã e noite.</p>
+        </div>
+
+        <a href="javascript:void(0)" class="sanfona-link" onclick="sanfonaItem(2)">Saúde</a>
+        <div class="sanfona-item sanfona-2">
+          <p>Saúde</p>
+        </div>
+
+        <a href="javascript:void(0)" class="sanfona-link" onclick="sanfonaItem(3)">Histórico Veterinário</a>
+        <div class="sanfona-item sanfona-3">
+          <p>Histórico Veterinário</p>
+        </div>
+
+        <a href="javascript:void(0)" class="sanfona-link" onclick="sanfonaItem(4)">Cuidados Especiais</a>
+        <div class="sanfona-item sanfona-4">
+          <p>Cuidados Especiais</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <section class="rodape">
+    <img src="img/icone-instagram.png" alt="Instagram Lar do Pet">
+    <p class="cor-branco">instagram.com/lardopet</p>
+  </section>
+
+</body>
+
+</html>

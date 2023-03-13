@@ -1,0 +1,254 @@
+/* -------------------------------------------------------------------------------------------
+  AUTORES:
+    ERIC KATSUMI OUCHI
+    FABRICIO LUIZ DE POLITO
+    JOSE ANTONIO LOPES PAIVA JUNIOR
+    MARIANA DE ATHAYDE COSTA OZORIO
+--------------------------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------------------------
+  Login
+--------------------------------------------------------------------------------------------- */
+
+main.formulario {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.formulario form {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.formulario img {
+  width: 200px;
+  height: 200px;
+}
+
+.formulario form input[type="text"],
+.formulario select {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #dbafe2;
+  border: 0px;
+  border-radius: 5px;
+}
+
+.btn {
+  width: 80%;
+  text-decoration: none;
+  background-color: #3c4b9c;
+  color: #fff;
+  padding: 8px 0px;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.formulario form a.esqueceu-senha {
+  display: block;
+  color: #bc3767;
+  text-align: right;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.formulario form a.criar-conta {
+  display: block;
+  color: #bc3767;
+  text-align: center;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------------------------
+  Cadastro
+--------------------------------------------------------------------------------------------- */
+
+.formulario form h3 {
+  color: #bc3767;
+  margin-bottom: 20px;
+}
+
+/* -------------------------------------------------------------------------------------------
+  Painel Home
+--------------------------------------------------------------------------------------------- */
+
+main {
+  max-width: 1197px;
+  margin: 0px auto;
+}
+
+.painel {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 100px;
+  padding: 40px 20px;
+}
+
+.painel .menu-lateral ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.painel .menu-lateral ul li {
+  padding: 10px 30px;
+  background-color: #fff;
+}
+
+.painel .menu-lateral ul li:first-of-type {
+  background-color: #ae5495;
+  border-radius: 50px 50px 0px 0px;
+  padding: 20px 30px;
+}
+
+.painel .menu-lateral ul li:last-of-type {
+  border-radius: 0px 0px 50px 50px;
+  padding-bottom: 20px;
+}
+
+.painel .menu-lateral ul li a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.painel .menu-lateral ul li a img {
+  max-width: 24px;
+}
+
+.painel .caixa-pets {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+/* -------------------------------------------------------------------------------------------
+  Painel Meus Pets Perfil
+--------------------------------------------------------------------------------------------- */
+
+.painel {
+  align-items: flex-start;
+}
+
+.painel .caixa-pets-perfil {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.painel .caixa-pets-perfil .caixa-pet-introducao {
+  background-color: #ea7eec;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.painel .caixa-pets-perfil .caixa-pet-introducao h1 {
+  font-size: 1.8rem;
+  font-weight: normal;
+  position: relative;
+  padding-left: 40px;
+}
+
+.painel .caixa-pets-perfil .caixa-pet-introducao h1::before {
+  display: block;
+  content: "";
+  width: 80px;
+  height: 80px;
+  background-image: url("../img/painel/foto-pet.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -80px;
+  left: -80px;
+  border: 10px solid #fff;
+  border-radius: 50%;
+}
+
+.painel .caixa-pets-perfil .sanfona a.sanfona-link {
+  display: block;
+  background-color: #743975;
+  border-radius: 20px;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.painel .caixa-pets-perfil .sanfona a.sanfona-link-edit {
+  color: #743975;
+  text-decoration: none;
+  float: right;
+}
+
+.painel .caixa-pets-perfil .sanfona div {
+  padding: 0 20px 20px 20px;
+}
+
+.painel .caixa-pets-perfil .sanfona .sanfona-item {
+  display: none;
+}
+
+.painel .caixa-pets-perfil .sanfona .sanfona-ativo {
+  display: block;
+}
+
+.form-editar-pet {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px 60px;
+}
+
+.form-editar-pet input,
+.form-editar-pet select {
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.form-editar-pet input[type="text"],
+.form-editar-pet select {
+  background-color: #dbafe2;
+  border: 0px;
+  border-radius: 5px;
+}
+
+.form-editar-pet input[type="submit"] {
+  background-color: #3c4b9c;
+  border: 0px;
+  border-radius: 5px;
+}
+
+/* -------------------------------------------------------------------------------------------
+  Estilos para mobile
+--------------------------------------------------------------------------------------------- */
+
+@media (max-width: 991.98px) {
+  .painel {
+    grid-template-columns: auto;
+  }
+}

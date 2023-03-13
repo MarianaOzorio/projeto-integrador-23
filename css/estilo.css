@@ -1,0 +1,434 @@
+/* -------------------------------------------------------------------------------------------
+  AUTORES:
+    ERIC KATSUMI OUCHI
+    FABRICIO LUIZ DE POLITO
+    JOSE ANTONIO LOPES PAIVA JUNIOR
+    MARIANA DE ATHAYDE COSTA OZORIO
+--------------------------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------------------------
+  Estilo do corpo
+--------------------------------------------------------------------------------------------- */
+body {
+  font-family: "Inter", Arial, sans-serif;
+  margin: 0px;
+  color: #121212;
+  background-color: #bc3767;
+}
+
+/* -------------------------------------------------------------------------------------------
+  CSS reset para alguns elementos
+--------------------------------------------------------------------------------------------- */
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.clear {
+  clear: both;
+}
+
+.cor-branco {
+  color: #fff !important;
+}
+
+/* -------------------------------------------------------------------------------------------
+  Cabecalho
+--------------------------------------------------------------------------------------------- */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  max-width: 1197px;
+  margin: 0 auto;
+}
+
+.header img {
+  max-width: 150px;
+}
+
+.header .menu {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.header ul.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.header .menu .menu-entrar {
+  display: flex;
+  gap: 10px;
+}
+
+.header .menu .menu-entrar img {
+  max-width: 24px;
+}
+
+/* -------------------------------------------------------------------------------------------
+  Introducao
+--------------------------------------------------------------------------------------------- */
+
+main {
+  max-width: 1197px;
+  margin: 0px auto;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 100px;
+  padding: 40px 20px;
+}
+
+.introducao img {
+  border-radius: 0px 70px 0px 0px / 25px 70px 25px 25px;
+}
+
+.introducao div {
+  justify-self: end;
+}
+
+.introducao h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+  color: #fff;
+}
+
+.introducao h1 span {
+  background-color: #7c002d;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* -------------------------------------------------------------------------------------------
+  Acoes
+--------------------------------------------------------------------------------------------- */
+
+section.acoes {
+  max-width: 1197px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 40px;
+  align-items: center;
+}
+
+section.acoes div {
+  padding-right: 80px;
+}
+
+section.acoes div h3 {
+  margin-bottom: 20px;
+}
+
+/* -------------------------------------------------------------------------------------------
+  Dicas
+--------------------------------------------------------------------------------------------- */
+
+section.dicas-fluido {
+  background-color: #8f1d46;
+  padding: 40px 20px;
+}
+
+section.dicas-fluido section.dicas {
+  max-width: 1197px;
+  margin: 0 auto;
+}
+
+section.dicas-fluido section.dicas .caixas {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 40px 0;
+  gap: 40px;
+}
+
+section.dicas-fluido section.dicas .caixas .caixa img {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+section.dicas-fluido section.dicas .caixas .caixa {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* -------------------------------------------------------------------------------------------
+  Inferior
+--------------------------------------------------------------------------------------------- */
+
+section.inferior {
+  max-width: 1197px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section.inferior img {
+  display: inline-block;
+}
+
+/* -------------------------------------------------------------------------------------------
+  Rodape
+--------------------------------------------------------------------------------------------- */
+
+section.rodape {
+  max-width: 1197px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* -------------------------------------------------------------------------------------------
+  Hospedagem
+--------------------------------------------------------------------------------------------- */
+
+.hospedagem {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hospedagem img {
+  border-radius: 0px 70px 0px 0px / 25px 70px 25px 25px;
+  margin-bottom: 40px;
+  width: 1197px;
+  /* object-fit: cover; */
+}
+
+/* -------------------------------------------------------------------------------------------
+  Espacos
+--------------------------------------------------------------------------------------------- */
+
+section.espaco-fluido {
+  background-color: #8f1d46;
+}
+section.espaco {
+  max-width: 1197px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 40px;
+  align-items: center;
+}
+
+section.espaco div {
+  padding-right: 80px;
+}
+
+section.espaco div h3 {
+  margin-bottom: 20px;
+}
+
+/* -------------------------------------------------------------------------------------------
+  Clinicas
+--------------------------------------------------------------------------------------------- */
+
+.clinicas {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.clinicas img {
+  border-radius: 0px 70px 0px 0px / 25px 70px 25px 25px;
+  margin-bottom: 40px;
+  width: 1197px;
+  /* object-fit: cover; */
+}
+
+section.clinica-fluido {
+  background-color: #8f1d46;
+}
+
+section.clinica {
+  max-width: 1197px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 40px;
+  align-items: center;
+}
+
+section.clinica div {
+  padding-right: 80px;
+}
+
+section.clinica div h3 {
+  margin-bottom: 20px;
+}
+
+/* -------------------------------------------------------------------------------------------
+  Sobre
+--------------------------------------------------------------------------------------------- */
+
+.sobre {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sobre img {
+  border-radius: 0px 70px 0px 0px / 25px 70px 25px 25px;
+  margin-bottom: 40px;
+  width: 1197px;
+}
+
+section.sobre-fluido {
+  background-color: #8f1d46;
+}
+
+section.caixa-sobre {
+  max-width: 1197px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 40px;
+  align-items: center;
+}
+
+section.caixa-sobre div {
+  padding-right: 80px;
+}
+
+section.caixa-sobre div h3 {
+  margin-bottom: 20px;
+}
+
+section.caixa-sobre div p {
+  margin-bottom: 10px;
+}
+
+/* -------------------------------------------------------------------------------------------
+  Estilos para mobile
+--------------------------------------------------------------------------------------------- */
+
+@media (max-width: 991.98px) {
+  .header {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .header .menu {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .header .menu li a {
+    padding: 10px;
+    background-color: #7c002d;
+    border-radius: 4px;
+    display: inline-block;
+  }
+
+  .header .menu li.menu-entrar img {
+    display: none;
+  }
+
+  .introducao {
+    border-bottom: 1px solid #eaeaea;
+    gap: 30px;
+  }
+
+  .introducao div {
+    justify-self: center;
+  }
+
+  .introducao h1 {
+    font-size: 2.8rem;
+    line-height: 1.125;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  section.acoes,
+  section.espaco,
+  section.clinica,
+  section.espaco,
+  section.caixa-sobre {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  section.acoes img,
+  section.espaco img,
+  section.clinica img,
+  section.espaco img,
+  section.caixa-sobre img {
+    display: none;
+  }
+
+  section.acoes:first-of-type,
+  section.espaco:first-of-type {
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  section.dicas-fluido section.dicas .caixas {
+    grid-template-columns: 1fr;
+  }
+
+  section.rodape {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  .introducao img {
+    display: none;
+  }
+
+  .introducao div {
+    justify-self: center;
+  }
+}
