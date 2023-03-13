@@ -29,7 +29,6 @@ main.formulario {
   align-items: center;
   background-color: #fff;
   border-radius: 5px;
-  padding: 10px;
 }
 
 .formulario img {
@@ -56,7 +55,7 @@ main.formulario {
   border: 0px;
   border-radius: 5px;
   cursor: pointer;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   font-size: 14px;
 }
 
@@ -73,7 +72,7 @@ main.formulario {
   display: block;
   color: #bc3767;
   text-align: center;
-  margin-top: 30px;
+  margin-bottom: 30px;
   text-decoration: none;
 }
 
