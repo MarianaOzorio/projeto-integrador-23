@@ -59,11 +59,11 @@ img {
 --------------------------------------------------------------------------------------------- */
 .header {
   width: 100%;
-  max-height: 14vh;
+  min-height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0px;
+  padding: 10px 0px;
   background-color: #bc3767;
 }
 
@@ -90,7 +90,6 @@ img {
 --------------------------------------------------------------------------------------------- */
 
 main {
-  max-width: 1197px;
   margin: 0px auto;
 }
 
@@ -302,6 +301,7 @@ section.caixa-sobre {
 
 section.caixa-sobre div {
   padding-right: 80px;
+  margin-left: 20px;
 }
 
 section.caixa-sobre div h3 {
@@ -318,8 +318,13 @@ section.caixa-sobre div p {
 
 @media (max-width: 991.98px) {
   .header {
+    min-height: 14vh;
     flex-direction: column;
     gap: 40px;
+  }
+
+  .header img {
+    margin-left: 0px;
   }
 
   .header .menu {
@@ -329,7 +334,6 @@ section.caixa-sobre div p {
 
   .header .menu li a {
     padding: 10px;
-    background-color: #7c002d;
     border-radius: 4px;
     display: inline-block;
   }
@@ -340,11 +344,15 @@ section.caixa-sobre div p {
 
   .introducao {
     border-bottom: 1px solid #eaeaea;
-    gap: 30px;
+
   }
 
   .introducao div {
     justify-self: center;
+  }
+
+  .introducao img {
+    display: none;
   }
 
   .introducao h1 {
