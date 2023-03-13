@@ -7,7 +7,6 @@
  -->
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,16 +20,20 @@
 </head>
 <body>
   <main class="formulario cadastro">
-    <form action="">
+    <form action="meus-pets.html" method="get">
+      <img src="img/logo2-transparente.png" alt="Logo">
       <h3>Formulário de Cadastro de Pet - Insira os dados abaixo:</h3>
       <input type="text" name="" id="" placeholder="Nome">
       <input type="text" name="" id="" placeholder="Idade">
       <input type="text" name="" id="" placeholder="Raça">
       <input type="text" name="" id="" placeholder="Peso">
-      <p>Adicione uma foto</p>
-      <input type="file" name="" id="">
-      <input type="submit" value="Cadastrar" class="cor-branco">
-      <a href="meus-pets.html" class="criar-conta">Ir para o Painel</a>
+      <div class="add-foto-pet">
+        <label>Adicione uma foto:</label>
+        <input type="file" name="" id="">
+      </div>
+      <a href="meus-pets.html" class="btn">
+        <p>Cadastrar</p>
+      </a>      
     </form>
   </main>
 </body>
